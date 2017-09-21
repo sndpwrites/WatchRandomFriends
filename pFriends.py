@@ -29,7 +29,7 @@ def btnGo():
     os.chdir(random.choice(season))
     episode = [f for f in os.listdir(os.getcwd()) if os.path.isfile(os.path.join(os.getcwd(), f))]
     Fepisode = random.choice(episode)
-    Fvideoformat = ["mkv", "mp4"]
+    Fvideoformat = ["mkv", "mp4", "m4v"]
     if Fepisode[-3:] in Fvideoformat:
         os.system("vlc " + Fepisode)
         print("vlc " + Fepisode)
